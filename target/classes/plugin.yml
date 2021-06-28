@@ -1,8 +1,0 @@
-main: com.example.DialogueHelper
-name: dialogueHelper
-version: 0.1
-author: matthew_hre
-api-version: 1.16
-
-commands:
-  cutscene:
