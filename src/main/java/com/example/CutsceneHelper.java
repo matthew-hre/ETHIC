@@ -1,7 +1,6 @@
 package main.java.com.example;
 
-import javax.tools.DocumentationTool.Location;
-
+import org.bukkit.Location;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.World;
@@ -24,13 +23,6 @@ public class CutsceneHelper extends JavaPlugin {
     @Override
     public void onDisable() {
         sendCommandFeedback("Shutting down, goodbye cruel world.");
-    }
-
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (label.equals("dialogue")) {
-            runCutscene(sender, args); // manage commands
-        }
-        return false;
     }
 
     public void runCutscene(CommandSender sender, String[] args) {
@@ -60,7 +52,7 @@ public class CutsceneHelper extends JavaPlugin {
 
         Location loc = new Location(world, x, y, z);
 
-        player.teleport(destination);
+        player.teleport(loc);
 
     }
 
