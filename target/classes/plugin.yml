@@ -1,5 +1,5 @@
-main: com.example.DialogueHelper
-name: dialogueHelper
+main: main.java.com.example.ETHIC
+name: ETHIC
 version: 0.1
 author: matthew_hre
 api-version: 1.16
